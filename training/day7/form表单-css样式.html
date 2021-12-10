@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS样式 </title>
+
+    <style type="text/css">
+        #css_test {
+            background: deepskyblue;
+            font-family: "Arial Black";
+            color: red;
+        }
+
+        .class_test {
+            background: yellow;
+            /*border: none;*/
+        }
+
+        input {
+            border: 2px dashed blue;
+        }
+        p {
+            color: red;
+            font-style: italic;
+        }
+
+        fieldset input{
+            border: 2px dashed red ;
+        }
+
+    </style>
+
+</head>
+<body>
+    <p>个人信息表</p>
+    <form action="baidu_url">
+
+        姓名: <input id="css_test" type="text" name="name"> <br>
+        电话: <input  class="class_test" type="number" name="phone"> <br>
+        姓别: <input type="radio" name="sex" value="男">男 <input type="radio" name="sex"  value="女">女  <br>
+        爱好: <input  type="checkbox" name="hobbie" value="girl">姑娘
+             <input type="checkbox" name="hobbie" value="潜水">潜水
+            <input type="checkbox" name="hobbie" value="Python">Python  <br>
+
+        输入密码：<input class="class_test"  type="password" name="password"> <br>
+
+        <p>喜欢的姑娘类型</p>
+        <select name="gilr_type">
+            <option value="1">胸大貌美大长腿</option>
+            <option value="2">气质小可爱</option>
+            <option value="3">妖娆性感</option>
+            <optgroup label="按区域">
+                <option value="4">欧美</option>
+                <option value="5">日韩</option>
+                <option value="6">河南开封</option>
+            </optgroup>
+        </select> <br>
+
+        个人简介: <br>
+        <textarea name="intro" placeholder="输入不省于50字的个人介绍" rows="3" cols="50" ></textarea> <br>
+
+
+
+        <button>注册</button>
+    </form>
+
+    <form>
+         <fieldset>
+          <legend>Personalia:</legend>
+          Name: <input type="text"><br>
+          Email: <input type="text"><br>
+          Date of birth: <input type="text">
+         </fieldset>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+div {
+    border: 1px dashed red;
+    width: 500px;
+    margin-bottom: 50px;
+    position: relative;
+    right: 600px
+}
+
+p {
+    background-color: yellow;
+    font-size: 18px;
+    font-family: "PingFang HK";
+}

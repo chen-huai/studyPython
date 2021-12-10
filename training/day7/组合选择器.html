@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        #layer1 {
+            height: 500px;
+            padding: 30px;
+            border: 1px dashed blue;
+        }
+        #layer2 {
+            height: 400px;
+            padding: 30px;
+            border: 1px dashed red;
+        }
+        #layer3 {
+            height: 300px;
+            padding: 30px;
+            border: 1px dashed black;
+        }
+        p,h3 {
+            color: red;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+
+<div id="layer1">
+    <p>第1层</p>
+    <div id="layer2">
+        <p>layer 2</p>
+        <h2>layer 2 h2</h2>
+        <div id="layer3">
+            <p>第3层</p>
+            <h3>layer 3 h3</h3>
+        </div>
+    </div>
+
+</div>
+<p>我不在任何的div里</p>
+
+</body>
+</html>

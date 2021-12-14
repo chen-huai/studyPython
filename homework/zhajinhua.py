@@ -100,25 +100,22 @@ class pokerGame:
             if pokerData[userNum][5] == bigger[5]:
                 if int(pokerData[userNum][7][0]) + int(pokerData[userNum][7][1]) + int(pokerData[userNum][7][2]) > int(bigger[7][0]) + int(bigger[7][1]) +int(bigger[7][2]):
                     bigger = pokerData[userNum]
-                # if int(pokerData[userNum][7][2]) > int(bigger[7][2]):
-                #     bigger = pokerData[userNum]
-                # elif int(pokerData[userNum][7][2]) == int(bigger[7][2]):
-                #     if int(pokerData[userNum][7][1]) > int(bigger[7][1]):
-                #         bigger = pokerData[userNum]
-                #     elif int(pokerData[userNum][7][1]) == int(bigger[7][1]):
-                #         if int(pokerData[userNum][7][0]) > int(bigger[7][0]):
-                #             bigger = pokerData[userNum]
-                #         elif int(pokerData[userNum][7][1]) == int(bigger[7][1]):
-                #             if int(pokerData[userNum][7][0]) > int(bigger[7][0]):
-                #                 # 这个是要判断花色
-                #                 bigger = pokerData[userNum]
-                #         else:
-                #             bigger = bigger
-                #     else:
-                #         bigger = bigger
-                elif int(pokerData[userNum][7][0]) + int(pokerData[userNum][7][1]) + int(pokerData[userNum][7][2]) > int(bigger[7][0]) + int(bigger[7][1]) +int(bigger[7][2]):
-                    # 判断花色大小
-                    bigger = bigger
+                if int(pokerData[userNum][7][2]) > int(bigger[7][2]):
+                    bigger = pokerData[userNum]
+                elif int(pokerData[userNum][7][2]) == int(bigger[7][2]):
+                    if int(pokerData[userNum][7][1]) > int(bigger[7][1]):
+                        bigger = pokerData[userNum]
+                    elif int(pokerData[userNum][7][1]) == int(bigger[7][1]):
+                        if int(pokerData[userNum][7][0]) > int(bigger[7][0]):
+                            bigger = pokerData[userNum]
+                        elif int(pokerData[userNum][7][1]) == int(bigger[7][1]):
+                            if int(pokerData[userNum][7][0]) > int(bigger[7][0]):
+                                # 这个是要判断花色
+                                bigger = pokerData[userNum]
+                        else:
+                            bigger = bigger
+                    else:
+                        bigger = bigger
                 else:
                     bigger = bigger
             elif pokerData[userNum][5] > bigger[5]:
